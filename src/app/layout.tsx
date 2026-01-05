@@ -5,10 +5,13 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sanjoy Dhara - Data Science & AI Professional",
-  description: "Portfolio of Sanjoy Dhara - Data Science and Artificial Intelligence professional specializing in machine learning, deep learning, and data analytics.",
+  title: "Supriya Dutta - Data Science & AI Professional",
+  description:
+    "Portfolio of Supriya Dutta - Data Science and Artificial Intelligence professional specializing in machine learning, deep learning, and data analytics.",
+  icons: {
+    icon: "/favicon.png",   // ← THIS FIXES THE ERROR
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

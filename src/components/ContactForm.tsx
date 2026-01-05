@@ -46,28 +46,28 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
+              <label htmlFor="name" className="block text-lg font-medium mb-2">
                 Your Name
               </label>
               <Input
                 id="name"
                 name="name"
                 type="text"
-                placeholder="John Doe"
+                placeholder="abc"
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
+              <label htmlFor="email" className="block text-lg font-medium mb-2">
                 Your Email
               </label>
               <Input
                 id="email"
                 name="email"
                 type="email"
-                placeholder="john@example.com"
+                placeholder="abc@example.com"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -76,7 +76,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="subject" className="block text-sm font-medium mb-2">
+            <label htmlFor="subject" className="block text-lg font-medium mb-2">
               Subject
             </label>
             <Input
@@ -91,7 +91,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-2">
+            <label htmlFor="message" className="block text-lg font-medium mb-2">
               Message
             </label>
             <Textarea
@@ -124,7 +124,7 @@ export default function ContactForm() {
           </Button>
 
           {submitStatus === "success" && (
-            <div className="text-center text-green-600 dark:text-green-400 text-sm">
+            <div className="text-center text-green-600 dark:text-green-400 text-lg">
               Message sent successfully! I'll get back to you soon.
             </div>
           )}

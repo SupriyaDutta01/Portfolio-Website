@@ -45,9 +45,9 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection("home")}
-            className="text-xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
+            className="text-3xl font-bold text-white hover:text-blue-400 transition-colors drop-shadow-lg"
           >
-            Sanjoy Dhara
+            Supriya Dutta
           </button>
 
           {/* Desktop Navigation */}
@@ -56,7 +56,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-semibold text-gray-200 hover:text-white transition-colors drop-shadow-md"
+                className="text-lg font-semibold text-gray-200 hover:text-white hover:scale-125 hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.9)] transition-all duration-300 drop-shadow-md"
               >
                 {item.label}
               </button>
@@ -82,7 +82,7 @@ export default function Navigation() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-sm font-semibold text-gray-200 hover:text-white transition-colors text-left py-2"
+                  className="text-lg font-semibold text-gray-200 hover:text-white hover:scale-110 hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.9)] transition-all duration-300 text-left py-2"
                 >
                   {item.label}
                 </button>
