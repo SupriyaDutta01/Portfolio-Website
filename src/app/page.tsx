@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button"
 import Navigation from "@/components/Navigation"
 import ContactForm from "@/components/ContactForm"
 import AnimatedBackground from "@/components/AnimatedBackground"
-<<<<<<< HEAD
+
 import { Github, Linkedin, Mail, GraduationCap, Code2, Brain, ExternalLink, MapPin, Phone, ArrowRight, Sparkles, Database, BarChart3, Cpu, BookOpen, ChevronDown, ChevronUp, Star, Award, Monitor, Zap, TrendingUp, Eye, GitBranch, Coffee, MessageSquare } from "lucide-react"
-=======
+
 import { Github, Linkedin, Mail, GraduationCap, Code2, Brain, ExternalLink, MapPin, Phone, ArrowRight, Sparkles, Database, BarChart3, Cpu, BookOpen, ChevronDown, ChevronUp, Star, Award, Monitor, Zap, TrendingUp, Eye, GitBranch, Coffee, MessageSquare} from "lucide-react"
->>>>>>> e01076c (Update contact form and UI changes)
+
 import { SiPython, SiMysql, SiC, SiR, SiLatex, SiPytorch, SiTensorflow, SiKeras, SiScikitlearn, SiPandas, SiNumpy, SiOpencv, SiPlotly, SiStreamlit, SiLangchain, SiGit, SiGithub, SiJupyter, SiGooglecolab, SiOverleaf, SiLinux } from "react-icons/si"
 import { useEffect, useState } from "react"
 import Image from "next/image"
