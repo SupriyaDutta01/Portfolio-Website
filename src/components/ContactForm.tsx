@@ -20,15 +20,36 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    
-    setIsSubmitting(false)
-    setSubmitStatus("success")
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    
-    setTimeout(() => setSubmitStatus("idle"), 3000)
+    setSubmitStatus("idle")
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "YOUR_ACCESS_KEY_HERE",
+          ...formData,
+        }),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitStatus("success")
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+      setTimeout(() => setSubmitStatus("idle"), 5000)
+    }
   }
 
   const handleChange = (
