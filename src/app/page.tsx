@@ -92,7 +92,7 @@ export default function Home() {
       iconColor: "text-pink-500",
       items: [
         { name: "Machine Learning", icon: <Cpu className="text-xl" />, gradient: "from-purple-500 via-pink-500 to-fuchsia-600" },
-        { name: "Deep Learning", icon: <Brain className="text-xl" />, gradient: "from-indigo-500 via-purple-500 to-violet-600" },
+        { name: "Natural Language Processing", icon: <MessageSquare className="text-xl" />, gradient: "from-blue-600 via-indigo-600 to-violet-600" },
         { name: "Computer Vision", icon: <Eye className="text-xl" />, gradient: "from-violet-500 via-purple-500 to-indigo-600" },
         { name: "Generative AI", icon: <Sparkles className="text-xl" />, gradient: "from-pink-500 via-rose-500 to-red-600" },
         { name: "Reinforcement Learning", icon: <Zap className="text-xl" />, gradient: "from-fuchsia-500 via-pink-500 to-rose-600" },
