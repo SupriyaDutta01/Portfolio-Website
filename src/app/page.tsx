@@ -264,6 +264,27 @@ export default function Home() {
 
   const projects = [
     {
+      title: "Fraud Transaction Detection Using Machine Learning",
+      description: "Developed an end-to-end ML-based fraud detection system to identify fraudulent financial transactions from highly imbalanced data. Implemented advanced feature engineering (balance-drain, spent-ratio, time-based risk signals), multicollinearity reduction, and class-balanced learning. Trained and evaluated Logistic Regression and Random Forest models, achieving near-perfect performance (ROC-AUC: 0.998, PR-AUC: 0.996). Designed a multi-layer prevention framework combining rule-based controls, ML risk scoring, and behavioral anomaly detection with ROI-driven evaluation metrics.",
+      tags: [
+        "Python",
+        "Machine Learning",
+        "Fraud Detection",
+        "Random Forest",
+        "Logistic Regression",
+        "Imbalanced Data",
+        "Feature Engineering",
+        "Model Evaluation",
+        "ROC-AUC",
+        "PR-AUC",
+        "Risk Analytics",
+        "Financial Analytics"
+      ],
+      github: "https://github.com/SupriyaDutta01/Fraud-Transaction-Detection-Using-Machine-Learning",
+      gradient: "from-red-500/20 via-orange-500/10 to-red-500/20",
+      iconColor: "text-red-500"
+    },
+    {
       title: "NexGen Logistics - Customer Experience Dashboard",
       description: "Built an ML-powered Streamlit dashboard for NexGen Logistics to identify and prevent customer churn by integrating multi-source operational data and deploying a hybrid rule-based + RandomForest model (93.3% accuracy). Includes 9 interactive pages for EDA, risk scoring, model insights, and business impact analysis with ROI forecasting.",
       tags: [
