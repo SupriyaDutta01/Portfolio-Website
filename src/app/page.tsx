@@ -387,6 +387,15 @@ export default function Home() {
 
   const certificates = [
     {
+      title: "Machine Learning A-Z: AI, Python & R + ChatGPT Prize",
+      organization: "Udemy",
+      date: "2026",
+      description: "Built strong foundations in machine learning using Python and R, covering supervised and unsupervised learning, model evaluation, real-world datasets, and practical AI workflows. Gained hands-on experience with popular ML algorithms and ChatGPT-powered applications.",
+      certificateUrl: "/certificates/Machine Learning A-Z AI Python R ChatGPT Prize.pdf",
+      gradient: "from-green-500/20 via-emerald-500/10 to-green-500/20",
+      orgColor: "text-green-500",
+    },
+    {
       title: "The Joy of Computing using Python",
       organization: "NPTEL",
       date: "2024",
